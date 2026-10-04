@@ -1,0 +1,20 @@
+{
+  "name": "onet-chiangmai-standards-analytics",
+  "version": "1.0.0",
+  "description": "ระบบสารสนเทศเชิงโต้ตอบสำหรับวิเคราะห์แนวโน้มคะแนนเฉลี่ยถ่วงน้ำหนักและแปลผลมาตรฐานการเรียนรู้ O-NET (2565 - 2568) จังหวัดเชียงใหม่",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "node build_web_app.js"
+  },
+  "keywords": [
+    "onet",
+    "education-analytics",
+    "dashboard",
+    "chiangmai",
+    "learning-standards",
+    "trend-analysis"
+  ],
+  "author": "สำนักงานศึกษาธิการจังหวัด เชียงใหม่",
+  "license": "MIT"
+}
