@@ -986,4 +986,11 @@ const htmlContent = `<!DOCTYPE html>
 `;
 
 fs.writeFileSync(path.join(__dirname, 'index.html'), htmlContent, 'utf8');
-console.log('Successfully updated index.html with P6 Blue, M3 Green tab and Home defaults to P6!');
+
+const publicDir = path.join(__dirname, 'public');
+if (!fs.existsSync(publicDir)) {
+  fs.mkdirSync(publicDir, { recursive: true });
+}
+fs.writeFileSync(path.join(publicDir, 'index.html'), htmlContent, 'utf8');
+
+console.log('Successfully generated index.html and public/index.html for Vercel!');
